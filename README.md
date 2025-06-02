@@ -1,5 +1,3 @@
-# dual_agent
-
 
 # Dual-Agent Knowledge API (CrewAI + FastAPI)
 
