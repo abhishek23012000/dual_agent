@@ -1,5 +1,5 @@
 
-# Dual-Agent Knowledge API (CrewAI + FastAPI)
+# Dual-Agent Knowledge (CrewAI + FastAPI)
 
 This project is a FastAPI-based web service that uses **CrewAI agents** to intelligently answer queries using both **public sources (Wikipedia)** and **private/internal documents (PDFs Quadrant)**.
 
