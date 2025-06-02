@@ -1,0 +1,9 @@
+fastapi
+uvicorn
+crewai
+pydantic
+crewai[tools]
+wikipedia
+langchain-qdrant
+sentence-transformers
+python-dotenv
