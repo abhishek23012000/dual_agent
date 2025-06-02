@@ -90,21 +90,11 @@ The FastAPI `/api/query` endpoint returns the result in JSON format. The respons
 ```json
 {
   "result": {
-    "Final Answer": "Climate change affects agriculture by altering rainfall patterns, increasing temperatures, and influencing crop yields across regions.",
+    "Final Answer": "Generative AI creates new content, like text or images, based on patterns in data. Large Language Models (LLMs) are a powerful form of this AI, generating human-like text, while Small Language Models (SLMs) focus on specialized tasks with less data. Retrieval-Augmented Generation (RAG) enhances these models by pulling in external information for more accurate results.",
     "📚 Sources": {
-      "Public": "https://en.wikipedia.org/wiki/Climate_change_and_agriculture",
-      "Private": ["internal_report.pdf (page 5)", "crop_data_2023.csv"]
+      "Public": "https://en.wikipedia.org/wiki/gen ai",
+      "Private": ["internal_report.pdf (page 5)", "gen_ai.pdf"]
     }
   }
 }
-
-
-
-
-
-
-
-   
-
-
-
+```
