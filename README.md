@@ -47,6 +47,58 @@ http://localhost:8000/docs
 ## Architecture
 ![download](https://github.com/user-attachments/assets/80f6450c-a08d-447d-931d-4bbf36fafefe)
 
+## ⚙ How It Works
+
+### 1. Agents Setup
+
+- **Public Agent** uses `WikipediaTool` to fetch relevant data from Wikipedia.
+- **Private Agent** uses `QuadrantSearchTool` to search embedded company documents (PDF, CSV).
+- **Merge Agent** takes both summaries and constructs a final, well-structured response.
+
+---
+
+### 2. Tasks Execution
+
+Each agent is tied to a specific `Task`:
+
+- `public_task`: Pulls structured summaries from public sources.
+- `private_task`: Gathers relevant data from internal documents.
+- `merge_task`: Synthesizes a final answer with full traceability of data sources.
+
+---
+
+### 3. Crew Orchestration
+
+- All agents and tasks are bundled into a `Crew`.
+- The `Crew.kickoff()` method is used to **execute tasks sequentially**:
+  - First, the **Public** and **Private** tasks run to gather data.
+  - Then, the **Merge** task runs to combine their outputs into one clear, cited answer.
+
+---
+
+### 4. API Response
+
+The FastAPI `/api/query` endpoint returns the result in JSON format. The response includes:
+
+-  Final synthesized answer
+- Clear source citations (from both public and private data)
+
+---
+
+### 🧪 Example Output
+
+```json
+{
+  "result": {
+    "Final Answer": "Climate change affects agriculture by altering rainfall patterns, increasing temperatures, and influencing crop yields across regions.",
+    "📚 Sources": {
+      "Public": "https://en.wikipedia.org/wiki/Climate_change_and_agriculture",
+      "Private": ["internal_report.pdf (page 5)", "crop_data_2023.csv"]
+    }
+  }
+}
+
+
 
 
 
