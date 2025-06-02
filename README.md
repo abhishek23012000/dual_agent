@@ -25,7 +25,7 @@ The architecture is built to scale, modularize, and maintain a clean separation 
 1. **Clone the repository**
 ```bash
 git clone [https://github.com/your-username/dual-agent-api.git](https://github.com/abhishek23012000/dual_agent.git)
-cd dual-agent-api
+cd dual_agent
 ```
 2. **Install dependencies**
 ```bash
