@@ -39,10 +39,14 @@ pip install -r requirements.txt
   uvicorn main:app --reload
 ```
 
-6. **Test the API**
-   ```bash
-   http://localhost:8000/docs
-   ```
+5. **Test the API**
+```bash
+http://localhost:8000/docs
+```
+
+
+
+
    
 
 
