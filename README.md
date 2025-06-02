@@ -44,6 +44,13 @@ http://localhost:8000/docs
 
 
 
+## Architecture
+![download](https://github.com/user-attachments/assets/80f6450c-a08d-447d-931d-4bbf36fafefe)
+
+
+
+
+
 
    
 
