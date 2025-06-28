@@ -2,7 +2,7 @@ from crewai.tools import BaseTool
 from core.vector_store import vector_store  # assuming this is defined somewhere
 
 class QuadrantSearchTool(BaseTool):
-    name: str = "Private Vector Search Tool"
+    name: str = "Private Vector Search Tool1"
     description: str = "Searches private documents from a Quadrant vector DB."
 
     def _run(self, query: str):
